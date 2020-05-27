@@ -1,6 +1,6 @@
 # CS569 Homework 08
 ### Angular Router Module and Guards
-* Create a service `db` that gives access to an array of JSON objects:
+* Create a service `db` that returns an observable with the following response:
 ```javascript
 [{_id: 1, name:'Natural Prairie', produce:['lettuce', 'tomato']}, ...]
 ```
