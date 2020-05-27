@@ -5,6 +5,7 @@
 [{_id: 1, name:'Natural Prairie', produce:['lettuce', 'tomato']}, ...]
 ```
 * Add another method that returns an observable with full details of a single farm by `id`.
+* Add Angular Router module and convert your `AppComponent` into a template.
 * Create a component `farmersMarket` that is responsible for showing a list of farm names.
 ```html
 <ul>
