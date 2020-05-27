@@ -2,7 +2,7 @@
 ### Angular Router Module and Guards
 * Create a service `db` that gives access to an array of JSON objects:
 ```javascript
-[{_id: 1, Farm:'Natural Prairie', produce:['lettuce', 'tomato']}, ...]
+[{_id: 1, name:'Natural Prairie', produce:['lettuce', 'tomato']}, ...]
 ```
 * Create a component `farmersMarket` that is responsible for showing the farm name and types of produce.
 ```html
