@@ -1,10 +1,10 @@
-# CS569 Homework 08
+# CS569 Homework 07
 ### Angular Router Module and Guards
-* Create a service `db` that returns an observable with the following response:
+* Create a service that returns an observable with the following response:
 ```javascript
-[{_id: 1, name:'Natural Prairie', produce:['lettuce', 'tomato']}, ...]
+[{_id: 1, name:'Natural Prairies', produce:['lettuce', 'tomato']}, ...]
 ```
-* Add another method that returns an observable with full details of a single farm by `id`.
+* Add another method to your service that returns an observable with full details of a single farm by `id`.
 * Add Angular Router module and convert your `AppComponent` into a template.
 * Create a component `farmersMarket` that is responsible for showing a list of farm names.
 ```html
