@@ -1,18 +1,8 @@
 # CS569 Homework 07
 ### Angular Router Module and Guards
-* Create a service that returns an observable with the following response:
-```javascript
-[{_id: 1, name:'Natural Prairies', produce:['lettuce', 'tomato']}, ...]
-```
-* Add another method to your service that returns an observable with full details of a single farm by `id`.
+**Update the previous Homework:**
 * Add Angular Router module and convert your `AppComponent` into a template.
-* Create a component `farmersMarket` that is responsible for showing a list of farm names.
-```html
-<ul>
-  <li><a href="/farm/1">Natural Prairie</a></li>
-  ...
-</ul> 
-```
-* When users click on a farm name link you should direct them to a `farmDetails` child component that shows produce details of the farm.
-* If a user tried to visit `farmDetails` page without passing an `id` or passes a wrong `id`, then your app will redirect them to a friendly error page.
+* The application shows list of users (first and last name only) by default (`UsersComponent`).
+* When we click on a user (`/user/:id`), show a card of the user other details (`UserComponent`).
+* If a user tried to visit `UserComponent` without passing an `id` or passes a wrong `id`, then your app will redirect them to a friendly error page. (use Guards)
 
