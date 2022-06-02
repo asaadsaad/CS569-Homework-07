@@ -1,8 +1,10 @@
-# CS569 Homework 07
+# CS569 Homework 06
 ### Angular Router Module and Guards
 **Update the previous Homework:**
-* Add Angular Router module and convert your `AppComponent` into a template.
-* When we navigate to `/users/, the application shows list of users (first and last name only) by default (`UsersComponent`).
-* When we click on a user (`/users/:email`), show a card of the user other details (`UserComponent`) within the `UsersComponent` as a child route.
-* If a user tried to visit `UserComponent` without passing an `id` or passes a wrong `id`, then your app will redirect them to a friendly error page. (use Guards)
+* Add Angular Router module
+* Remove the Show/Hide button and convert `AppComponent` into a template with a link to `UsersComponent`.
+* Update `UsersComponent` so it saves the users list in a global state.
+* When we navigate to `/users/, the application shows the cards.
+* Add a button to each card so when we clicked it goes to (`/users/:email`), create a new `UserDetailsComponent` to display more details.
+* If a user tried to visit `UserDetailsComponent` without passing an `:email` or passes a wrong `:email`, then your app will redirect them to a friendly error page. (use Guards)
 
