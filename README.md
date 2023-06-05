@@ -3,10 +3,26 @@
 **Update the previous Homework:**
   
 * Add Angular Router module
-* Remove the Show/Hide button and convert `AppComponent` into a template with a router link to navigate to `UsersComponent` when `/users` is requested.  
-  
+* Remove the Show/Hide button and convert `AppComponent` into a template with a router link to navigate to `ListComponent` when `/list` is requested.  =
+* Create a guard to enforce the user on using Google Chrome browser, if not, a friendly error page should be displayed. You may use the following service:
+```typescript
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class BrowserDetector {
+  isChrome() {
+    return navigator.userAgent.indexOf('Chrome') > -1;
+  }
+}
+```
 **Extra Requirements:**
-* Update `UserComponent` to display a button on each card, when it's clicked it navigates to (`/user/:email`) and passes the user object through the navigation state.
-* Create a new component `UserDetailsComponent` mapped to `/user/:email`, the component receives the full `User` object from the navigation state and displays more details about the user. Add a back button that goes to `/users`.
-* If a user tried to visit `UserDetailsComponent` without passing a correctly formatted `:email`, your app will redirect them to a friendly error page. (use Guards)
+  
+Given a list of the following nationalities:
+```typescript
+nationalities : string[] = ['AU', 'BR', 'CA', 'CH', 'DE', 'DK', 'ES', 'FI', 'FR', 'GB', 'IE', 'IN', 'IR', 'MX', 'NL', 'NO', 'NZ', 'RS', 'TR', 'UA', 'US']
+```
+Create router links on `AppComponent`, each one sends a request to the following URL: `https://randomuser.me/api/?results=10&nat=US` (replace the query parameter with the nationality code). When a nationality is selected, display a message: `Showing users from the US`.
+
 
