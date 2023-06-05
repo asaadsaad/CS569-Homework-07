@@ -2,7 +2,7 @@
 ### Angular Router Module and Guards
 **Update the previous Homework:**
   
-* Add Angular Router module
+* Import Angular Router module
 * Remove the Show/Hide button and convert `AppComponent` into a template with a router link to navigate to `ListComponent` when `/list` is requested.  =
 * Create a guard to enforce the user on using Google Chrome browser, if not, a friendly error page should be displayed. You may use the following service:
 ```typescript
