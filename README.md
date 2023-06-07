@@ -21,6 +21,6 @@ export class BrowserDetector {
 ```typescript
 nationalities : string[] = ['AU', 'BR', 'CA', 'CH', 'DE', 'DK', 'ES', 'FI', 'FR', 'GB', 'IE', 'IN', 'IR', 'MX', 'NL', 'NO', 'NZ', 'RS', 'TR', 'UA', 'US']
 ```
-Create router links on `AppComponent` as follows: `Filter by: AU, BR, CA ...etc`, each one sends a request to the following URL: `https://randomuser.me/api/?results=10&nat=US` (replace the query parameter with the nationality code). When a nationality is selected, display a message: `Showing users from the US` and provide a link to remove the filter.
+Create router links on `ListComponent` as follows: `Filter by: AU, BR, CA ...etc`, each one sends a request to the following URL: `https://randomuser.me/api/?results=10&nat=US` (replace the query parameter with the nationality code). When a nationality is selected, display a message: `Showing users from the US` and provide a link to remove the filter.
 
 
