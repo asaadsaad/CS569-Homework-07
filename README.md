@@ -1,10 +1,9 @@
 # CS569 Homework
-### Angular Router Module and Guards
 **Update the previous Homework:**
   
 * Import Angular Router module
-* Remove the Show/Hide button and convert `AppComponent` into a template displaying the `ListComponent` component when `/` is requested.
-* Create a guard to enforce the user on using Google Chrome browser, if not, a friendly error page should be displayed. You may use the following service:
+* Remove the Show/Hide button and convert `AppComponent` into a template (use a router outlet) displaying the `ListComponent` component when `/` is requested.
+* Create a guard to force the user to use Google Chrome browser, if not, a friendly error page should be displayed. You may use the following service:
 ```typescript
 import { Injectable } from '@angular/core';
 
@@ -21,6 +20,6 @@ export class BrowserDetector {
 ```typescript
 nationalities : string[] = ['AU', 'BR', 'CA', 'CH', 'DE', 'DK', 'ES', 'FI', 'FR', 'GB', 'IE', 'IN', 'IR', 'MX', 'NL', 'NO', 'NZ', 'RS', 'TR', 'UA', 'US']
 ```
-Create router links on `ListComponent` as follows: `Filter by: AU, BR, CA ...etc`, each one sends a request to the following URL: `https://randomuser.me/api/?results=10&nat=US` (replace the query parameter with the nationality code). When a nationality is selected, display a message: `Showing users from the US` and provide a link to remove the filter.
+Display router links on `ListComponent` as follows: `Filter by: AU, BR, CA ...etc`, each nationality is a link that sends a request to the following URL: `https://randomuser.me/api/?results=10&nat=US` (replace the query parameter with the nationality code). When a nationality link is clicked, display a message: `Filtered by: US` and an <ins>(remove filter)</ins> link to remove the filter.
 
 
