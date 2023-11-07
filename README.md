@@ -2,7 +2,7 @@
 **Update the previous Homework:**
   
 * Import Angular Router module
-* Remove the Show/Hide button and convert `AppComponent` into a template (use a router outlet) displaying the `ListComponent` component when `/` is requested.
+* Remove the Show/Hide button and convert `AppComponent` into a template (use a router outlet) displaying the `ListComponent` component when the root URL `/` is requested.
 * Create a guard to force the user to use Google Chrome browser, if not, a friendly error page should be displayed. You may use the following service:
 ```typescript
 import { Injectable } from '@angular/core';
